@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+#  web:
+#    build: ./api
+#    ports:
+#      - "3000:3000"
+  db:
+#    image: mysql
+    build: ./mysql
+    expose:
+      - 3306/tcp
+    ports:
+      - 3306:3306
