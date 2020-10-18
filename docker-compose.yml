@@ -8,16 +8,16 @@ services:
     ports:
       - 3306:3306
 
-  web:
-    build: ./api
-    restart: always
-    depends_on:
-      - db
-    ports:
-      - "3000:3000"
-    environment:
-      - "HOST=GenesisTestTask_default"
-      - "PORT=3306"
-      - "USERNAMEnode"
-      - "PASSWORD=pass"
-      - "DATABASE=Weather"
+#  web:
+#    build: ./api
+#    restart: always
+#    depends_on:
+#      - db
+#    ports:
+#      - "3000:3000"
+#    environment:
+#      - "HOST=GenesisTestTask_default"
+#      - "PORT=3306"
+#      - "USERNAMEnode"
+#      - "PASSWORD=pass"
+#      - "DATABASE=Weather"

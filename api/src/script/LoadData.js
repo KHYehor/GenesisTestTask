@@ -17,7 +17,7 @@ const knex = require('knex')({
  * CONSTANTS FOR SCRIPT
  */
 const URL_CITIES = 'https://www.weatherbit.io/static/exports/cities_all.json.gz';
-const URL_HOURLY_REQUEST = 'https://api.weatherbit.io/v2.0/history/hourly?tz=utc&key=531ca5878587446e87b51534ff8bda92&';
+const URL_HOURLY_REQUEST = 'https://api.weatherbit.io/v2.0/history/hourly?tz=utc&key=de3ac68bb1a742ac9e7068bf9788ace4&';
 const COUNT_OF_LAST_DAYS = 7;
 const ONE_DAY = 24*3600*1000;
 const CITY_FILTER_COUNTRY = 'US';
