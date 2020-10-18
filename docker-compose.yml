@@ -1,11 +1,16 @@
 version: "3.8"
 services:
-#  web:
-#    build: ./api
-#    ports:
-#      - "3000:3000"
+  web:
+    build: ./api
+    ports:
+      - "3000:3000"
+    environment:
+      - HOST: "GenesisTestTask_default",
+      - PORT: 3306,
+      - USERNAME: "node",
+      - PASSWORD: "pass",
+      - DATABASE: "Weather",
   db:
-#    image: mysql
     build: ./mysql
     expose:
       - 3306/tcp
