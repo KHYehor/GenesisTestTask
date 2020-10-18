@@ -168,7 +168,7 @@ const script = async () => {
   // Step 5
   console.log(`Inserting cities...`);
   console.time(`Inserted cities in`);
-  await knex('Cities').insert(US);
+  await knex.raw(knex('Cities').insert(US).toQuery().replace(`insert`, `replace`));
   console.timeEnd(`Inserted cities in`);
   // Step 6
   console.log(`Pulling weather for cities...`);
@@ -183,7 +183,7 @@ const script = async () => {
   // Step 8
   console.log(`Inserting weather...`);
   console.time(`Inserted weather in...`);
-  await knex('Weather').insert(mappedWeather);
+  await knex.raw(knex('Weather').insert(mappedWeather).toQuery().replace(`insert`, `replace`));
   console.timeEnd(`Inserted weather in...`);
   // Step 9
   console.timeEnd(`Script finished in`);
