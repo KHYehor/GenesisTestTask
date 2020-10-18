@@ -24,6 +24,8 @@ Genesis Test Task
 
 ``node src/script/LoadData.js``
 
+P.S. If this script has lagged - just restart it - it could happen due to chosen by me provider
+
 Начало работы
 
 ``yarn run start``
