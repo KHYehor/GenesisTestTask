@@ -9,6 +9,7 @@ export class createCitiesRequests1602951416043 implements MigrationInterface {
                 city_id INT,
                 count INT,
                 PRIMARY KEY (id),
+                UNIQUE (city_id),
                 FOREIGN KEY (city_id)  REFERENCES Cities (id)
             ) ENGINE=InnoDB;
         `);

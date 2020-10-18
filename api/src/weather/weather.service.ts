@@ -73,7 +73,7 @@ export class WeatherService {
         timestamp: Raw(alias => `DATE_FORMAT(${alias}, "%Y %m %d") = DATE_FORMAT("${date}", "%Y %m %d")`),
       }
     });
-    if (!weather) {
+    if (!weather.length) {
       throw new HttpException({
         status: 404,
         error: 'No weather for this date',
